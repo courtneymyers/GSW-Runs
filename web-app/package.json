@@ -1,0 +1,35 @@
+{
+  "name": "@myers/gsw-runs-web-app",
+  "version": "0.1.0",
+  "private": true,
+  "description": "React web app for tracking runs",
+  "author": "Courtney Myers (github.com/courtneymyers)",
+  "main": "src/index.js",
+  "dependencies": {
+    "flow-bin": "0.56.0",
+    "husky": "0.14.3",
+    "lint-staged": "4.2.3",
+    "prettier": "1.7.4",
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0",
+    "react-scripts": "1.0.14",
+    "styled-components": "2.2.1"
+  },
+  "lint-staged": {
+    "gitDir": "../",
+    "linters": {
+      "src/**/*.{js,jsx,json,css}": [
+        "prettier --write --trailing-comma all",
+        "git add"
+      ]
+    }
+  },
+  "scripts": {
+    "precommit": "lint-staged",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom --verbose",
+    "flow": "flow",
+    "eject": "react-scripts eject"
+  }
+}
