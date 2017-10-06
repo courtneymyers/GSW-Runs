@@ -1,0 +1,17 @@
+{
+  "name": "@myers/gsw-runs-web-service",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Koa web service for tracking runs",
+  "author": "Courtney Myers (github.com/courtneymyers)",
+  "main": "src/index.js",
+  "dependencies": {
+    "koa": "2.3.0",
+    "koa-logger": "3.1.0",
+    "koa-route": "3.2.0"
+  },
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
